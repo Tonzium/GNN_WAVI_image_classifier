@@ -1,4 +1,4 @@
-# Enhanced Data Augmentation Techniques for Improved Deep Learning Classification in Wafer Automatic Visual Inspection (WAVI)
+# Enhanced Data Augmentation Techniques for Improved Deep Learning Classification in Wafer Automated Visual Inspection (WAVI)
 
 ## Overview
 This repository contains a Python-based solution designed to address the challenge of limited labeled data in the context of Wafer Automatic Visual Inspection (WAVI).
