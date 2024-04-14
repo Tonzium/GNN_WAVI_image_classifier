@@ -105,7 +105,7 @@ class training_cnn_model():
         
 
         # Initialize ConvNeXtLarge with the cropped input
-        conv_next_large_model = tf.keras.applications.VGG19(
+        conv_next_large_model = tf.keras.applications.ConvNeXtLarge(
             include_top=False,
             weights="imagenet",
             input_tensor=cropped_input,  # input_tensor is optional input for the model, use the cropped input here
