@@ -4,6 +4,8 @@
 This repository contains a Python-based solution designed to address the challenge of limited labeled data in the context of Wafer Automatic Visual Inspection (WAVI).
 By leveraging advanced data augmentation techniques, approach significantly enhances the training dataset, enabling high classification accuracy with fewer original samples.
 
+**Important Note:** This repository does not include any data. The training data used in this project is proprietary and confidential. Due to company policies and the sensitive nature of the data, it cannot be shared or included in this repository.
+
 ## Features
 ### Data
 - Multiple Augmentation Techniques: Implements a variety of augmentation methods, including zoom, rotation, noise addition, shear transformations, and Contrast Limited Adaptive Histogram Equalization (CLAHE).
