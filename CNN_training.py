@@ -4,6 +4,9 @@ import time
 import matplotlib.pyplot as plt
 
 class DuplicateChannelsLayer(tf.keras.layers.Layer):
+    """
+    This class can be used to multiply single channel image to tree channel image. For instance, 255 --> 255, 255, 255
+    """
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
@@ -16,6 +19,13 @@ class DuplicateChannelsLayer(tf.keras.layers.Layer):
         return {**base_config}
 
 class training_cnn_model():
+    """
+    This class handles the training of Convolutional Neural Network (CNN) models.
+
+    The CNNModelTrainer class offers two distinct methods for training data:
+    1. Custom Neural Network Architecture: Users can define and use their own CNN architecture for training.
+    2. Pretrained Architecture: Users can leverage the pretrained ConvNextLarge architecture for training, benefiting from its pre-learned features.
+    """
     def __init__(self, LEARNING_RATE, LOAD_DATA_TO_MODEL=str, LOAD_TEST_DATA=str, CONV_FILTER_1=int, CONV_FILTER_2=int, CONV_FILTER_3=int, DENSE_UNIT_1=int, DENSE_UNIT_2=int, CONV_DROPOUT=float, DENSE_DROPOUT_1=float, DENSE_DROPOUT_2=float, EPOCHS=int, IMAGE_SIZE=tuple, CROPPED_IMAGE_SIZE=tuple, BATCH_SIZE=int, TRAINING_PATIENCE=int):
 
         self.load_data = LOAD_DATA_TO_MODEL
